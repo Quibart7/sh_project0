@@ -1,0 +1,319 @@
+.outside{
+    margin: 0 auto;
+    max-width: 1920px;
+    min-width: 1519.2px;
+    background-color: purple;
+}
+.header{
+    margin: 0 auto;
+}
+.header .nav{
+    overflow: hidden;
+}
+.header .nav .one{
+    float: left;
+    overflow: hidden;
+    margin-left: 20px;
+}
+.header .nav .one li{
+    float: left;
+    list-style: none;
+}
+.header .nav .one li a{
+    display: block;
+    text-decoration: none;
+    padding: 0 10px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 14px;
+    color: #fff;
+}
+.header .nav input{
+    float: left;
+    border: 2px solid rgb(0, 110, 255);
+    border-radius: 10px;
+    margin: 15px 10px;
+    width: 538px;
+    height: 46px;
+}
+.header .nav .two{
+    float: right;
+    margin-right: 20px;
+}
+.header .nav .two li{
+    float: left;
+    margin: auto;
+    list-style: none;
+}
+.header .nav .two li a{
+    display: block;
+    padding: 16px 5px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+.header .nav .two li a img{
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+.header .nav ul li:nth-child(1) a{
+    position: relative;
+}
+.header .nav ul li:nth-child(1) .status{
+    display: none;
+    position: absolute;
+    z-index: 3;
+    right: 350px;
+    height: 560px;
+    width: 250px;
+    background-color: lightseagreen;
+}
+.header .nav ul li:nth-child(1) .status .one a{
+    display: block;
+    text-align: center;
+}
+.header .nav ul li:nth-child(1):hover .status{
+    display: block;
+    z-index: 3;
+    background-color: red;
+}
+.header .nav ul li:nth-child(1) a img{
+    width: 50px;
+}
+.header .logo{
+    position: relative;
+    height: 110px;
+}
+.header .logo .bili{
+    float: left;
+}
+
+.w{
+    margin: 0 auto;
+}
+.content .subnav{
+    overflow: hidden;
+    margin: 0 auto;
+    width: 1400px;
+}
+/* 父盒子浮动是否会不受子盒子浮动影响 */
+.content .subnav .left{
+    float: left;
+}
+.content .subnav .left div{
+    float: left;
+}
+.content .subnav .left div a{
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+.content .subnav .left div a img{
+    border: 10px solid transparent;
+    border-radius: 50%;
+    width: 50px;
+}
+.content .subnav .center{
+    float: left;
+    width: 924px;
+}
+.content .subnav .center ul{
+    float: left;
+    padding: 20px 0;
+}
+.content .subnav .center li{
+    list-style: none;
+    float: left;
+    margin: 4px 2px;
+    width: 80px;
+    height: 35px;
+    background-color: whitesmoke;
+}
+.content .subnav .center li a{
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 35px;
+    font-size: 13px;
+    color: grey;
+}
+.content .subnav .center li a:hover,
+.content .subnav .right li a:hover{
+    background-color: rgb(168, 188, 190);
+}
+.content .subnav .right{
+    float: right;
+    margin: 18px 0;
+    height: 90px;
+    width: 252px;
+}
+.content .subnav .right ul{
+    float: left;
+}    
+.content .subnav .right li{
+    list-style: none;
+    float: left;
+    margin: 4px 2px;
+    width: 80px;
+    height: 35px;
+    background-color: whitesmoke;
+}
+.content .subnav .right li a{
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 35px;
+    font-size: 13px;
+    color: black;
+}
+.content .hot{
+    overflow: hidden;
+    /* 没有宽度，靠外边距居中是不可能的 */
+    margin:  20px auto;
+    width: 1400px;
+}
+.content .hot .left{
+    float: left;
+    /* 如果只设置高度和宽度中的一项，另一项会随之改变，不会影响其比例 */
+    width: 600px;
+}
+.content .hot .left a img{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: 600px;
+}
+.content .hot .right{
+    float: right;
+    width: 790px;
+}
+.content .hot .right ul{
+    float: left;
+}
+.content .hot .right ul li{
+    float: left;
+    list-style: none;
+    padding: 0 0 0 10px;
+}
+.content .hot .right ul li a{
+    text-decoration: none;
+}
+.content .hot .right ul li a img{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: 250px;
+}
+.content .hot .right ul li a h5{
+    /* 不能给普通文本标签设置样式消除链接的下划线 */
+    margin-top: 20px;
+    padding: 10px 0;
+    font-size: 15px;
+    color: black;
+}
+.content .hot .right ul li a p{
+    padding: 10px;
+    color: black;
+}
+.content .hot .right ul li a h5:hover,
+.content .hot .right ul li a p:hover{
+    color: orangered;
+}
+.content .hot .other{
+    display: none;
+    position: fixed;
+    right: 0;
+    bottom: 300px;
+    height: 150px;
+    width: 50px;
+}
+.content .hot .other li{
+    box-sizing: border-box;
+    border: 1px solid black;
+    background-color: darkcyan;
+    width: 50px;
+    height: 50px;
+}
+.content .banner{
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 1920px;
+}
+.content .banner img{
+    width: 100%;
+}
+.footer .column{
+    overflow: hidden;
+    margin: 0 auto;
+    width: 1000px;
+}
+.footer .column .one{
+    float: left;
+    margin-right: 100px;
+}
+.footer .column .one h6 a{
+    text-decoration: none;
+    font-size: 15px;
+}
+.footer .column .one p{
+    height: 30px;
+    line-height: 30px;
+}
+.footer .column .one p a{
+    text-decoration: none;
+    padding-right: 5px;
+    color: black;
+}
+.footer .column .two{
+    float: left;
+    margin-right: 100px;
+}
+.footer .column .two h6 a{
+    text-decoration: none;
+    font-size: 15px;
+}
+.footer .column .two p{
+    height: 30px;
+    line-height: 30px;
+    color: black;
+}
+.footer .column .two p a{
+    text-decoration: none;
+    padding-right: 5px;
+    color: black;
+}
+.footer .column .three{
+    float: right;
+}
+.footer .column .three a{
+    float: left;
+    display: block;
+    text-decoration: none;
+}
+.footer .column .three a img{
+    /* 给图片宽度赋予百分比值会导致图片原本占有的空间不会随图片变小而缩小，原因不明 */
+    width: 50px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+.footer .column .three a p{
+    text-align: center;
+    color: black;
+}
+.footer .frlEndlink{
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    border-top:1px solid grey;
+    width: 1400px;
+}
+.footer .frlEndlink p{
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    color: slategrey;
+}

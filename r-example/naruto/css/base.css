@@ -1,0 +1,83 @@
+body {
+    position: relative;
+    max-width: 1920px;
+    min-width: 1200px;
+}
+
+.sidebar {
+    position: relative;
+    width: 25%;
+    height: 960px;
+}
+.sidebar .light{
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.sidebar .shadow{
+    position: absolute;
+    transition: all 6s ease 0s;
+    left: -200%;
+    z-index: 17;
+    width: 300%;
+    height: 100%;
+}
+.sidebar .shadow:hover{
+    left: 100%;
+}
+.sidebar .light .lone{
+    width: 100%;
+}
+.sidebar .lone {
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background-color: orangered;
+    width: 33.3%;
+    height: 100%;
+}
+
+.sidebar .lone .logo {
+    margin: 0 auto;
+    width: 90%;
+    height: 30%;
+    background-color: brown;
+}
+
+.sidebar .lone .list {
+    margin: 0 auto;
+    width: 90%;
+    height: 70%;
+    background-color: slategrey;
+}
+
+.sidebar .lone .list div {
+    box-sizing: border-box;
+    width: 100%;
+    height: 33.333%;
+}
+
+.sidebar .lone .list div:nth-child(n+2) {
+    border-top: 2px solid darkgray;
+}
+
+.content {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 75%;
+    height: 960px;
+    background-color: orange;
+}
+
+.content div {
+    margin: 0 auto;
+    width: 94%;
+    height: 33.3%;
+    background-color: gold;
+}
